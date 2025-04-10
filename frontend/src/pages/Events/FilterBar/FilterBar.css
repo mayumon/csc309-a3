@@ -1,0 +1,24 @@
+#filterForm {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: flex-start;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    padding: 2px;
+}
+
+.formDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.formDiv input {
+    width: 90%;
+}
+
+.formDiv select {
+    width: 100%;
+}

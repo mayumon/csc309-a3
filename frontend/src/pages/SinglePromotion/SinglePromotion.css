@@ -1,0 +1,13 @@
+#singlePromotionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    left: 0.5em;
+    padding: 0.5em;
+    gap: 0.5em;
+}
+
+.promotionError {
+    color: red;
+}

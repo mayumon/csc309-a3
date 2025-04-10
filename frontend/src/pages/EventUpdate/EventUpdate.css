@@ -1,0 +1,34 @@
+#eventUpdateContainer {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    left: 1em;
+    gap: 0.5em;
+}
+
+#eventUpdateForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.formRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.updateEventError {
+    color: red;
+}
+
+.eventError {
+    color: red;
+}
+
+button:hover {
+    cursor: pointer;
+}

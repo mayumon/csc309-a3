@@ -1,0 +1,94 @@
+.home-page-container {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem 2rem;
+	width: 100%;
+	align-items: flex-start;
+}
+
+.points-card {
+	width: 130px;
+	height: 130px;
+	border-radius: 20px;
+	background: linear-gradient(135deg, #6366f1, #8b5cf6); /* Indigo to Purple */
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+	transition: transform 0.2s ease;
+}
+
+/* .points-card:hover {
+	transform: scale(1.05);
+} */
+
+.points-value {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.points-label {
+	font-size: 0.9rem;
+	opacity: 0.85;
+}
+
+.dashboard-card {
+	width: auto;
+	height: auto;
+	border-radius: 20px;
+	background: #acacac; /* Indigo to Purple */
+	color: white;
+	display: flex;
+	flex-direction: row;
+	/* justify-content: center; */
+	align-items: center;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+	transition: transform 0.2s ease;
+	padding: 1rem;
+	margin-bottom: 2rem;
+	position: relative;
+	/* padding-top: 20px; */
+	font-family: "Segoe UI", sans-serif;
+}
+
+.dashboard-tab {
+	position: absolute;
+	top: -16px;
+	left: 20px;
+	background-color: #acacac;
+	padding: 6px 16px;
+	border-radius: 12px 12px 0 0;
+	font-size: 0.85rem;
+	font-weight: 600;
+}
+
+.card-button {
+	width: 130px;
+	height: 130px;
+	border-radius: 20px;
+	background: linear-gradient(135deg, #06b6d4, #3b82f6); /* cyan to blue */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+	cursor: pointer;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.margin-left {
+	margin-left: 1rem;
+}
+
+.card-button p {
+	padding: 0.5rem;
+	color: white;
+	font-size: 0.95rem;
+	font-weight: 600;
+}
+
+.card-button:hover {
+	transform: scale(1.05);
+}

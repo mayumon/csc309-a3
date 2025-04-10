@@ -1,0 +1,76 @@
+.user-edit-container {
+	max-width: 600px;
+	margin: 40px auto;
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+	font-family: "Segoe UI", sans-serif;
+}
+
+.user-edit-card {
+	background: white;
+	padding: 24px;
+	border-radius: 16px;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.user-edit-card h2 {
+	margin-bottom: 20px;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 16px;
+}
+
+.form-group label {
+	margin-bottom: 6px;
+	font-weight: 600;
+	font-size: 0.95rem;
+	color: #444;
+}
+
+.form-group input {
+	padding: 10px 12px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	font-size: 1rem;
+	transition: border 0.2s ease;
+}
+
+.form-group input:focus {
+	border-color: #3b82f6;
+	outline: none;
+}
+
+.save-button {
+	margin-top: 10px;
+	padding: 10px 16px;
+	background: linear-gradient(135deg, #6366f1, #8b5cf6);
+	color: white;
+	border: none;
+	border-radius: 10px;
+	font-weight: 600;
+	font-size: 1rem;
+	cursor: pointer;
+	/* transition: background 0.2s ease; */
+}
+
+.invalid-save-button {
+	margin-top: 10px;
+	padding: 10px 16px;
+	color: white;
+	border: none;
+	border-radius: 10px;
+	font-weight: 600;
+	font-size: 1rem;
+	background-color: #4e53b161;
+	cursor: default;
+}
+
+.save-button:hover {
+	background: linear-gradient(135deg, #4f46e5, #7c3aed);
+}

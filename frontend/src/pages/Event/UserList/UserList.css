@@ -1,0 +1,23 @@
+#eventsUserDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-height: 275px;
+    overflow-y: auto;
+}
+
+#eventsUserDetails summary:hover {
+    cursor: pointer;
+}
+
+.guestsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.guestDetails {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}

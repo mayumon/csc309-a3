@@ -1,0 +1,78 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id          Int         @id @default(autoincrement())
+  utorid      String      @unique
+  email       String      @unique
+  name        String
+  birthday    String?
+  role        String      @default("regular")
+  password    String?
+  points      Int         @default(0)
+  createdAt   DateTime    @default(now())
+  lastLogin   DateTime?
+  verified    Boolean     @default(false)
+  avatarUrl   String      @default("")
+  suspicious  Boolean?    @default(false)
+  promotions  Promotion[] @relation("UserToPromotions")
+  OrganizerTo Event[]     @relation("OrganizerToEvent")
+  GuestTo     Event[]     @relation("GuestToEvent")
+}
+
+model ResetToken {
+  id        Int      @id @default(autoincrement())
+  token     String   @unique
+  utorid    String
+  expiresAt DateTime
+}
+
+model Promotion {
+  id           Int           @id @default(autoincrement())
+  name         String
+  description  String
+  type         String
+  startTime    DateTime
+  endTime      DateTime
+  minSpending  Float?
+  rate         Float?
+  points       Int           @default(0)
+  Users        User[]        @relation("UserToPromotions")
+  Transactions Transaction[] @relation("PromotionsToTransactions")
+}
+
+model Transaction {
+  id           Int         @id @default(autoincrement())
+  utorid       String
+  type         String
+  spent        Float?
+  amount       Int?
+  awarded      Int?
+  remark       String      @default("")
+  relatedId    Int?
+  suspicious   Boolean     @default(false)
+  promotionIds Promotion[] @relation("PromotionsToTransactions")
+  createdBy    String
+}
+
+model Event {
+  id            Int      @id @default(autoincrement())
+  name          String
+  description   String
+  location      String
+  startTime     DateTime
+  endTime       DateTime
+  capacity      Int?
+  pointsRemain  Int
+  pointsAwarded Int
+  published     Boolean  @default(false)
+  isFull        Boolean  @default(false)
+  organizers    User[]   @relation("OrganizerToEvent")
+  guests        User[]   @relation("GuestToEvent")
+}
