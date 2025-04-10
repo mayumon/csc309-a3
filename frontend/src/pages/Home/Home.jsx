@@ -3,6 +3,7 @@ import { useAuth } from "../../contexts/AuthContext";
 import "./Home.css";
 import PreviewTransaction from "../../components/PreviewTransactions/PreviewTransaction";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 function Home() {
 	const { user } = useAuth();
