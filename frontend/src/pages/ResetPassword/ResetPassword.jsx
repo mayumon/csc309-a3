@@ -76,7 +76,7 @@ function ResetPassword() {
 				<div className="flex-col">
 					<input
 						type="text"
-						className="margin-bottom"
+						className="login-input margin-bottom"
 						id="utorid"
 						name="utorid"
 						placeholder="Utorid"
@@ -86,7 +86,7 @@ function ResetPassword() {
 					/>
 					<input
 						type="password"
-						className="margin-bottom"
+						className="login-input margin-bottom"
 						id="password"
 						name="password"
 						placeholder="Password"

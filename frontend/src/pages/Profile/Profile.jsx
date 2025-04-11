@@ -208,11 +208,17 @@ function Profile() {
 				<h2>Edit Profile</h2>
 				<div className="form-group">
 					<label>Name</label>
-					<input name="name" value={form.name} onChange={handleChange} />
+					<input
+						className="login-input"
+						name="name"
+						value={form.name}
+						onChange={handleChange}
+					/>
 				</div>
 				<div className="form-group">
 					<label>Email</label>
 					<input
+						className="login-input"
 						name="email"
 						type="email"
 						value={form.email}
@@ -222,6 +228,7 @@ function Profile() {
 				<div className="form-group">
 					<label>Birthday</label>
 					<input
+						className="login-input"
 						name="birthday"
 						type="date"
 						value={form.birthday}
@@ -230,7 +237,12 @@ function Profile() {
 				</div>
 				<div className="form-group">
 					<label>Avatar (URL)</label>
-					<input name="avatar" value={form.avatar} onChange={handleChange} />
+					<input
+						className="login-input"
+						name="avatar"
+						value={form.avatar}
+						onChange={handleChange}
+					/>
 				</div>
 				<button
 					className={
@@ -248,6 +260,7 @@ function Profile() {
 				<div className="form-group">
 					<label>Old Password</label>
 					<input
+						className="login-input"
 						type="password"
 						name="oldPassword"
 						value={passwordForm.oldPassword}
@@ -257,6 +270,7 @@ function Profile() {
 				<div className="form-group">
 					<label>New Password</label>
 					<input
+						className="login-input"
 						type="password"
 						name="password"
 						value={passwordForm.password}
@@ -266,6 +280,7 @@ function Profile() {
 				<div className="form-group">
 					<label>Confirm Password</label>
 					<input
+						className="login-input"
 						type="password"
 						name="confirmPassword"
 						value={passwordForm.confirmPassword}

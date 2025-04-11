@@ -68,7 +68,7 @@ function Register() {
 				<div className="flex-col">
 					<input
 						type="text"
-						className=" margin-bottom"
+						className="login-input margin-bottom"
 						id="utorid"
 						name="utorid"
 						placeholder="Utorid"
@@ -79,7 +79,7 @@ function Register() {
 
 					<input
 						type="text"
-						className=" margin-bottom"
+						className="login-input margin-bottom"
 						id="name"
 						name="name"
 						placeholder="Name"
@@ -89,7 +89,7 @@ function Register() {
 					/>
 					<input
 						type="text"
-						className=" margin-bottom"
+						className="login-input margin-bottom"
 						id="email"
 						name="email"
 						placeholder="Email"

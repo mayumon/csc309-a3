@@ -36,7 +36,7 @@ function Login() {
 					</label> */}
 					<input
 						type="text"
-						className=" margin-bottom"
+						className="login-input margin-bottom"
 						id="utorid"
 						name="utorid"
 						placeholder="Utorid"
@@ -50,7 +50,7 @@ function Login() {
 					</label> */}
 					<input
 						type="password"
-						className="item4"
+						className="login-input"
 						id="password"
 						name="password"
 						placeholder="Password"
