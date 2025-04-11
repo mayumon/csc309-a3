@@ -7,7 +7,7 @@
     "createsuperuser": "node prisma/createsu.js",
     "populatedb": "node prisma/createUsers.js",
     "clean": "rm -rf prisma/dev.db* node_modules package-lock.json prisma/migrations/",
-    "start": "npx prisma generate && npx prisma migrate deploy && node prisma/createsu.js clive123 clive.su@mail.utoronto.ca SuperUser123! && node index.js 8000"
+    "start": "npx prisma generate && npx prisma migrate deploy && node prisma/createsu.js clive123 clive.su@mail.utoronto.ca SuperUser123! && node prisma/seed.js && node index.js 8000"
   },
   "author": "CSC309 Student, Winter 2025",
   "license": "ISC",
