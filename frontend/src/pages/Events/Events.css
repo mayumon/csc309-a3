@@ -1,4 +1,3 @@
-/* Events.css */
 
 #eventsPageContainer {
     padding: 1em;
@@ -9,8 +8,7 @@
     left: 1em;
     width: 95%;
     gap: 0.5em;
-    /* New border styling */
-    border: 1px solid #ccc;
+    border: 1px solid #ffffff;
     border-radius: 8px;
 }
 
@@ -20,9 +18,8 @@
     gap: 1em;
 }
 
-/* Assuming the sidebar (filter bar container) uses this class */
 .filter-bar-container {
-    width: 320px;  /* Increase this value slightly to make it thicker */
+    width: 320px;
 }
 
 #eventsContainer {
