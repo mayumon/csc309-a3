@@ -7,7 +7,7 @@
     "createsuperuser": "node prisma/createsu.js",
     "populatedb": "node prisma/createUsers.js",
     "clean": "rm -rf prisma/dev.db* node_modules package-lock.json prisma/migrations/",
-    "start": "npm run clean && npx prisma generate && npx prisma migrate deploy && node prisma/createsu.js clive123 clive.su@mail.utoronto.ca SuperUser123! && node prisma/seed.js clive123 clive.su@mail.utoronto.ca SuperUser123! && node index.js 8000"
+    "start": "npm run clean && npx prisma generate && npx prisma migrate deploy && node prisma/seed.js clive123 clive.su@mail.utoronto.ca SuperUser123! && node index.js 8000"
   },
   "author": "CSC309 Student, Winter 2025",
   "license": "ISC",
@@ -21,8 +21,9 @@
     "jsonwebtoken": "^9.0.2",
     "multer": "^1.4.5-lts.1",
     "sqlite3": "^5.1.7",
-    "uuid": "^11.1.0",
-    "prisma": "^6.4.1"
+    "uuid": "^11.1.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "prisma": "^6.4.1"
+  }
 }
