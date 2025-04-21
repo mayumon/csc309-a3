@@ -103,7 +103,7 @@ const RedemptionRequest = () => {
             {redemptionId && (
                 <div>
                     <p>Scan this QR code for processing the redemption request:</p>
-                    <RedemptionQRCode redemptionData={`redemption:${redemptionId}`} />
+                    <RedemptionQRCode redemptionId={`redemption:${redemptionId}`} />
                 </div>
             )}
 
